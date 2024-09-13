@@ -19,7 +19,7 @@ $(".btn").on("click", function (event) {
 
   userClickedPattern.push(userChosenColour);
 
-  console.log(userClickedPattern);
+  // console.log(userClickedPattern);
 
   animatePress(userChosenColour);
 
@@ -43,7 +43,7 @@ function nextSequence() {
 
   var selectorButton = "#" + randomChosenColour;
 
-  console.log(gamePattern);
+  // console.log(gamePattern);
 
   $(selectorButton).fadeOut().fadeIn();
 
@@ -72,10 +72,10 @@ function animatePress(currentColor) {
 
 function checkAnswer() {
   if ((gamePattern.toString() === userClickedPattern.toString()) === true) {
-    console.log("OK");
+    // console.log("OK");
     setTimeout(nextSequence(), 10000);
   } else {
-    console.log("N-OK");
+    //console.log("N-OK");
     gameOver();
   }
 }
